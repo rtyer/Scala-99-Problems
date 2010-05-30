@@ -8,21 +8,21 @@ class P01Spec() extends Spec {
 	describe("a solution using built ins"){
 		it("should return 8 from List(1,2,4,8)"){
 			expect(8){				
-				new P01(List(1,2,4,8)).solutionA
+				P01.lastBuiltins(List(1,2,4,8))
 			}
 		}
 		
 		it("should return 'jane' from List(tom, dick, jane)"){
 			expect("jane"){
-				new P01(List("tom", "dick", "jane")).solutionA
+				P01.lastBuiltins(List("tom", "dick", "jane"))
 			}
 		}
 	}
 	
-	describe("an alternative solution"){
+	describe("an functional solution"){
 		it("should return 8 from List(1,2,4,8)"){
 			expect(8){
-				new P01(List(1,2,4,8)).solutionB
+				P01.lastFunctional(List(1,2,4,8))			
 			}
 		}
 	}	
