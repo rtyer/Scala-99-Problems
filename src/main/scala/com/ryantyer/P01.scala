@@ -1,5 +1,6 @@
 package com.ryantyer
 
-class P01(numbers:List[Int]) {
-	def last()=numbers.last
+class P01(numbers:List[Any]) {
+	def solutionA()=numbers.last
+	def solutionB()=numbers(numbers.size - 1)
 }
