@@ -25,5 +25,13 @@ class P01Spec() extends Spec {
 				P01.lastFunctional(List(1,2,4,8))			
 			}
 		}
+	}
+	
+	describe("The 'accepted answer'"){
+		it("should return 8 from List(1,2,4,8)"){
+			expect(8){
+				P01.answer(List(1,2,4,8))			
+			}
+		}
 	}	
 }
