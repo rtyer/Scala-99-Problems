@@ -1,6 +1,6 @@
 import sbt._
 
-class Scala99(info: ProjectInfo) extends DefaultProject(info) {
+class Scala99(info: ProjectInfo) extends DefaultProject(info) with GrowlPlugin {
 
     // Dependencies
     val scalatest = "org.scalatest" % "scalatest" % "1.0"
@@ -9,5 +9,4 @@ class Scala99(info: ProjectInfo) extends DefaultProject(info) {
     // Additional Repositories
     val scalaToolsSnapshots = "Scala-Tools Maven2 Snapshots Repository" at "http://scala-tools.org/repo-snapshots"
   	val mavenLocal = "Local Maven Repository" at "file://" + Path.userHome + "/.m2/repository"
-
 }
