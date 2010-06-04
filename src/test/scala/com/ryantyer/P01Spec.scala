@@ -8,7 +8,7 @@ class P01Spec() extends Spec {
 	describe("a solution using built ins"){
 		it("should return 8 from List(1,2,4,8)"){
 			expect(8){				
-				P01.lastBuiltins(List(1,2,4,8))
+				P01.lastBuiltins(List(1,2,4,8)) 
 			}
 		}
 		

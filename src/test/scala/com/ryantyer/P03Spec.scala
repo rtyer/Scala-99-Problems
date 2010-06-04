@@ -15,7 +15,7 @@ class P03Spec extends Spec{
 		describe("functional"){
 			it("should return 3 from nthFunctional(3, List(1,1,2,3,5,8))"){
 				expect(3){
-					P03.nthFunctional(3,List(1,1,2,3,5,8))
+					P03.nthFunctional(3,List(1,1,2,3,5,8))					
 				}
 			}
 			it("should throw exception when size of list is less than position"){
